@@ -17,9 +17,9 @@ G(GND)                                  GND
 ```
 Red Modbus wire goes to the RS486 "A" screw terminals and black to "B".
 
-## Published topic
+## MQTT topic
 Root topic is defined in the beginning of the sketch and the full topic gets appended to this. I specified "/beca/" as my root, so my topic are e.g. "/beca/read/power". Values read from the device have "read" in the topic, and values sent to the thermostat have "write". Sending messages to the "read" topics get ignored. There is no error handling on the payload of the "write" messages, data received gets sent to the device.
-### Read topics
+### Read topics (Published topics)
 - root + "read/power": device status, Off (0) or On (1)
 - root + "read/fan": fan speed, Auto (0), High (1), Medium (2), Low (3)
 - root + "read/mode": mode, Cooling (0), Heating (1), Ventillation (2)
@@ -29,11 +29,11 @@ Root topic is defined in the beginning of the sketch and the full topic gets app
 - root + "read/lock" : screen lock, Unlocked (0), Locked (1)
 - root + "read/ambient": ambient temperature in degrees centigrade, e.g. 24.5
 - root + "read/target": target temperature in degrees centigrade, e.g. 20.5
-### Write topics
+### Write topics (Subscribed topics)
 - root + "write/power": set device status (same values as above)
 - root + "write/fan": set fan speed (same values as above)
 - root + "write/mode": set mode (same values as above)
 - root + "write/lock" : set screen lock  (same values as above)
 - root + "write/target": set target temperature in degrees centigrade, e.g. 20.5
-### Error topic
+### Error topic (published)
 - root + "error": Modbus error message in text (e.g. "Response timed out")
