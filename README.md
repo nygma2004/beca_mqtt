@@ -37,3 +37,13 @@ Root topic is defined in the beginning of the sketch and the full topic gets app
 - root + "write/target": set target temperature in degrees centigrade, e.g. 20.5
 ### Error topic (published)
 - root + "error": Modbus error message in text (e.g. "Response timed out")
+
+## Test board shown in the video
+This is the general layout of the board showing how the Wemos D1 mini and the RS485 board is oriented:
+![General board layout](https://github.com/nygma2004/beca_mqtt/blob/master/board01.jpg)
+
+This is the side where the Wemos plugs in. You see the red +5V wires connected to the 5V pin of the Wemos and Vcc of the RS486 board. Black goes to GND on both:
+![Wemos side](https://github.com/nygma2004/beca_mqtt/blob/master/board02.jpg)
+
+And the other side of the board where the RS485 plugs. Yellow wires are the data wires, blue are the enable wires:
+![Wemos side](https://github.com/nygma2004/beca_mqtt/blob/master/board03.jpg)
