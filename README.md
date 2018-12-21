@@ -1,6 +1,8 @@
 # Beca thermostat Modbus to MQTT Gateway
 This sketch is designed to provide an MQTT gateway to Beca Modbus thermostats. It uses a ESP8266 (in my case Wemos D1 mini) and an RS485 to TTL converter to read the Holding Registers of the thermostat and publish those values to MQTT. Also subscirbes to MQTT and relevant updates are written into the Modbus device (like power status, fan speed, mode, target temperature and screen lock).
 
+Project explained in detail in this video: https://youtu.be/d8nhMimx9-0
+
 ## Libraries used
 - Modbus Master library: https://github.com/4-20ma/ModbusMaster/blob/master/examples/RS485_HalfDuplex/RS485_HalfDuplex.ino
 - ESP Software Serial: https://github.com/plerup/espsoftwareserial
@@ -49,3 +51,6 @@ This is the side where the Wemos plugs in. You see the red +5V wires connected t
 
 And the other side of the board where the RS485 plugs. Yellow wires are the data wires, blue are the enable wires:
 ![Wemos side](https://github.com/nygma2004/beca_mqtt/blob/master/board03.jpg)
+
+## Node-Red
+There is an example Node-Red flow (also shown in the video), which shows how to communicate with the device from Node-Red. The flow is in Gitbuh, and also here: https://flows.nodered.org/flow/286a8cea2fbb2a60544f0dd2faefda2a
