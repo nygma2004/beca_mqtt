@@ -29,6 +29,8 @@ Root topic is defined in the beginning of the sketch and the full topic gets app
 - root + "read/lock" : screen lock, Unlocked (0), Locked (1)
 - root + "read/ambient": ambient temperature in degrees centigrade, e.g. 24.5
 - root + "read/target": target temperature in degrees centigrade, e.g. 20.5
+- root + "rssi": wifi signal strength (RSSI)
+- root + "uptime": uptime in minutes
 ### Write topics (Subscribed topics)
 - root + "write/power": set device status (same values as above)
 - root + "write/fan": set fan speed (same values as above)
