@@ -6,6 +6,9 @@ Project explained in detail in this video: https://youtu.be/d8nhMimx9-0
 ## Libraries used
 - Modbus Master library: https://github.com/4-20ma/ModbusMaster/blob/master/examples/RS485_HalfDuplex/RS485_HalfDuplex.ino
 - ESP Software Serial: https://github.com/plerup/espsoftwareserial
+- PubSubClient: handle MQTT communication. Install it from the Arduino Library Manager
+- Time by Michael Margolis: also install this from the Arduino Library Manager
+- SunMoon: sunrise and sunset calculation: https://github.com/sfrwmaker/sunMoon
 
 ## Wiring
 ```
