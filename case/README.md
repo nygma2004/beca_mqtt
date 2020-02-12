@@ -1,1 +1,2 @@
-This is a 3D printable case for this modbus board. Here you find the STL and gcode files as well. You may want to edit the design, hence I included the STL as well.
+This is a 3D printable case for this modbus board. I am not saying this is the most sofisticated case ever. I am fairly new to Fusion 360 as well, so feel free to edit my design and change stuff around. The basic design is parametric, so you can increase the wall thickness or general size, but the mounting points and the wholes are measured from the side, so those need to be re-aligned.
+In the files, you find the Fusion 360 model, STL files and gcode as well. Slicing was done for a 3D printer with 0.2 mm layer height, 0.4 mm nozzle, 20% infill with brim.
