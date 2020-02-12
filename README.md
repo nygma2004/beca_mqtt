@@ -61,3 +61,6 @@ There is an example Node-Red flow (also shown in the video), which shows how to 
 ## PCB
 I have also designed a PCB for this board. You can see my PCB project at PCBWay where you can order the PCB but you can also download the gerber files if you want to manufacture elsewhere: https://www.pcbway.com/project/shareproject/ESP8266_Modbus_board.html
 You can find the BOM on the PCBWay project page. I purchased most of the components on eBay, but some of the links do not work any more. But only the RS486 to TTL converter is "special" everything else can be found in many different places, like Aliexpress.
+
+## Custom Case
+I have design a 3D printable case for the board, you find all the information in the case folder.
