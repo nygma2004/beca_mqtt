@@ -1,4 +1,4 @@
-)#include <SoftwareSerial.h>       // Leave the main serial line (USB) for debugging and flashing
+#include <SoftwareSerial.h>       // Leave the main serial line (USB) for debugging and flashing
 #include <ModbusMaster.h>         // Modbus master library for ESP8266
 #include <ESP8266WiFi.h>          // Wifi connection
 #include <ESP8266WebServer.h>     // Web server for general HTTP response
